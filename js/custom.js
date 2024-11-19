@@ -70,8 +70,6 @@
 // View the cart total.
 // Apply a discount code
 
-
-
 // let discountPrice;
 // let finalPrice;
 // const shoppingCart = {
@@ -162,3 +160,85 @@
 // console.log(shoppingCart.applyDiscount("sohelkhan302012"));
 // console.log(discountPrice);
 // console.log(finalPrice);
+
+// 3. Build a Movie Ticket Booking object to:
+
+// Select a movie.
+// Choose seats.
+// Confirm booking.
+// Check available seats.
+
+// const movieTicketBooking = {
+//   movienameslist: [
+//     {
+//       moviename: "3idots",
+//       ticketPrice: 100,
+//       availableSeats: 2,
+//       seats: ["A", "B"],
+//     },
+//     {
+//       moviename: "12thfail",
+//       ticketPrice: 120,
+//       availableSeats: 4,
+//       seats: ["A", "B", "C", "D"],
+//     },
+//     {
+//       moviename: "pathan",
+//       ticketPrice: 200,
+//       availableSeats: 1,
+//       seats: ["A"],
+//     },
+//   ],
+//   availablemovie() {
+//     return this.movienameslist;
+//   },
+//   selectedMovie: [],
+//   seletedmovei() {
+//     return this.selectedMovie;
+//   },
+//   ticket() {
+//     return this.selectedMovie.reduce(
+//       (acc, movie) => acc + movie.ticketPrice,
+//       0
+//     );
+//   },
+
+//   selectMovie(moviename) {
+//     let movie = movieTicketBooking.movienameslist.find(
+//       (movie) => movie.moviename === moviename
+//     );
+
+//     if (movie && movie.availableSeats > 0) {
+//       let seetName = prompt(
+//         `Plase select Sit ${moviename}, availableSeats ${movie.availableSeats} and Enter A B C D`
+//       );
+//       seetName = seetName.toString().toLowerCase();
+//       let setindex = movie.seats.findIndex(
+//         (seat) => seat.toLowerCase() === seetName
+//       );
+//       let setletter = movie.seats[setindex].toLowerCase();
+//       if (setletter === seetName) {
+//         movieTicketBooking.selectedMovie.push(movie);
+//         movie.availableSeats--;
+//         console.log(
+//           `Selected movie: ${movie.moviename} tickets: ${movie.ticketPrice}  Remaining seats: ${movie.seats[setindex]}`
+//         );
+//         movie.seats.splice(setindex, 1);
+//         alert(
+//           `confirm your movie ticket bookings your total tickets: ${movie.ticketPrice} Remaining`
+//         );
+//       } else {
+//         console.log("No available seats selection.");
+//       }
+//     } else {
+//       console.log("No available seats for selected movie.");
+//     }
+//   },
+// };
+
+// movieTicketBooking.selectMovie("3idots");
+// movieTicketBooking.selectMovie("3idots");
+// movieTicketBooking.selectMovie("12thfail");
+// movieTicketBooking.selectMovie("pathan");
+// console.log(movieTicketBooking.availablemovie());
+// console.log(movieTicketBooking.seletedmovei());
