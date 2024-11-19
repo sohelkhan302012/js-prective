@@ -242,3 +242,104 @@
 // movieTicketBooking.selectMovie("pathan");
 // console.log(movieTicketBooking.availablemovie());
 // console.log(movieTicketBooking.seletedmovei());
+
+// 5. Create a Weather Tracker object to:
+
+// Add daily weather reports.
+// Get the highest temperature for a week.
+// Find the average temperature for a month
+
+
+
+// let weeklyHighTemp;
+// let totalTemperature;
+// const weather = {
+//   weatherReport: [],
+//   addWeatherReport({
+//     date,
+//     Temperature,
+//     wind_speed,
+//     visibility,
+//     wind_direction,
+//   }) {
+//     this.weatherReport.push({
+//       date,
+//       Temperature,
+//       wind_speed,
+//       visibility,
+//       wind_direction,
+//     });
+//   },
+
+//   highlightTemperatureWeekly() {
+//     weeklyHighTemp = this.weatherReport.reduce((maxTemp, currentReport) => {
+//       return currentReport.Temperature > maxTemp
+//         ? currentReport.Temperature
+//         : maxTemp;
+//     }, -Infinity);
+//   },
+
+//   monthavargetemp() {
+//     totalTemperature = 0;
+//     this.weatherReport.forEach((report) => {
+//       totalTemperature += report.Temperature;
+//     });
+//     return totalTemperature / this.weatherReport.length;
+//   },
+// };
+
+// weather.addWeatherReport({
+//   date: "19-11-2024",
+//   Temperature: 30,
+//   wind_speed: 15,
+//   visibility: 10,
+//   wind_direction: "north",
+// });
+// weather.addWeatherReport({
+//   date: "18-11-2024",
+//   Temperature: 35,
+//   wind_speed: 15,
+//   visibility: 15,
+//   wind_direction: "south",
+// });
+// weather.addWeatherReport({
+//   date: "17-11-2024",
+//   Temperature: 37,
+//   wind_speed: 12,
+//   visibility: 16,
+//   wind_direction: "east",
+// });
+// weather.addWeatherReport({
+//   date: "16-11-2024",
+//   Temperature: 46,
+//   wind_speed: 12,
+//   visibility: 15,
+//   wind_direction: "north",
+// });
+// weather.addWeatherReport({
+//   date: "15-11-2024",
+//   Temperature: 55,
+//   wind_speed: 15,
+//   visibility: 15,
+//   wind_direction: "west",
+// });
+// weather.addWeatherReport({
+//   date: "14-11-2024",
+//   Temperature: 45,
+//   wind_speed: 15,
+//   visibility: 15,
+//   wind_direction: "north",
+// });
+// weather.addWeatherReport({
+//   date: "13-11-2024",
+//   Temperature: 50,
+//   wind_speed: 15,
+//   visibility: 15,
+//   wind_direction: "north",
+// });
+
+// console.log(weather.weatherReport);
+// weather.highlightTemperatureWeekly();
+// console.log(`Temperature: ${weeklyHighTemp}`);
+// console.log(weather.monthavargetemp());
+
