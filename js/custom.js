@@ -168,7 +168,6 @@
 // console.log(shoppingCart.checkout("abcd123734"));
 // console.log(shoppingCart.viewCart());
 
-
 // <----------------------------   exciese  -------------------------->
 
 // 3. Build a Movie Ticket Booking object to:
@@ -251,8 +250,6 @@
 // movieTicketBooking.selectMovie("pathan");
 // console.log(movieTicketBooking.availablemovie());
 // console.log(movieTicketBooking.seletedmovei());
-
-
 
 // <----------------------------   exciese  -------------------------->
 
@@ -499,8 +496,6 @@
 // bankAccountopj.fundtransfer();
 // bankAccountopj.viewbalance();
 
-
-
 // <----------------------------   exciese  -------------------------->
 
 // 5. Create a Weather Tracker object to:
@@ -591,8 +586,6 @@
 // console.log(weather.heighthestTemperaturweek());
 // console.log(weather.averageTemperatureMonth());
 
-
-
 // <----------------------------   exciese  -------------------------->
 
 // 6. Build a Todo List object to:
@@ -662,8 +655,6 @@
 // tasks.deleteTask("office task");
 // console.log(tasks.pandingtasks);
 // console.log(tasks.completedTasks);
-
-
 
 // <----------------------------   exciese  -------------------------->
 
@@ -815,8 +806,6 @@
 // schoolManagement.avarageGrade();
 // schoolManagement.certainGradeThreshold("B");
 
-
-
 // <----------------------------   exciese  -------------------------->
 
 // 8. Create a Hotel Management object to:
@@ -917,8 +906,6 @@
 // // console.log(hotelManagement.rooms);
 // hotelManagement.cancelBooking("102");
 
-
-
 // <----------------------------   exciese  -------------------------->
 
 // 9. Build a Car Rental System object to:
@@ -988,8 +975,6 @@
 // carRentalSystem.returnCar(rentedcar);
 // console.log(carRentalSystem.cars);
 // console.log(carRentalSystem.CheckAvailability());
-
-
 
 // <----------------------------   exciese  -------------------------->
 
