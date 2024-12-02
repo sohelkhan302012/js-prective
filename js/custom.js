@@ -1070,3 +1070,320 @@
 // gymsystem.TrackAttendance("9077");
 // gymsystem.TrackAttendance("9085");
 // gymsystem.viewMember("9077");
+
+// const dateobj = new Date();
+// let presenttime = 1732730891054;
+// let mybirthday = 1007749800000;
+// let a = presenttime - mybirthday;
+//  console.log(a + (32 * 365 * 24 * 60 * 60  * 1000));
+
+// let date1 = new Date(2001, 11, 8);
+// let date2 = new Date();
+// let diffTime = Math.abs(date2 - date1);
+// console.log(diffTime);
+
+// console.log(
+//   new Date(
+//     725016742805 + (32 * 365 * 24 * 60 * 60 * 1000 - 6 * 24 * 60 * 60 * 1000)
+//   )
+// );
+
+// let dateutc = new Date();
+
+// console.log(dateutc);
+
+
+// //Q-1 How do you create a new Date object representing the current date and time?
+
+
+// let currentDate = new Date();
+// console.log(currentDate);
+
+// //Q-2 Write a code snippet to get the current year using the Date object.
+
+// let currentYear = currentDate.getFullYear();
+// console.log(currentYear);
+
+// // Q-3 How can you retrieve the day of the week (0-6) from a Date object?
+
+// let dayofWeek = currentDate.getDay();
+// switch(dayofWeek){
+//   case 1:
+//   console.log("Monday");
+//   break;
+//   case 2:
+//   console.log("Tuesday");
+//   break;
+//   case 3:
+//   console.log("Wednesday");
+//   break;
+//   case 4:
+//   console.log("Thursday");
+//   break;
+//   case 5:
+//   console.log("Friday");
+//   break;
+//   case 6:
+//   console.log("Saturday");
+//   break;
+//   case 7:
+//   console.log("Sunday");
+//   break;
+// }
+
+
+// //Q-4 What method would you use to set the month of a Date object to August?
+
+// let augustmonthset = new Date(currentDate.setMonth(7));
+// console.log(augustmonthset);
+
+// //Q-5 Write a function that returns the number of milliseconds since January 1, 1970, 00:00:00 UTC.
+// let milisecond = new Date().getTime();
+// //Q-6 let milisecond = Date.now();
+// console.log(milisecond);
+
+
+// //Q-7 How can you calculate the difference in days between two Date objects?
+
+// let date1 = new Date("2024-11-30");
+
+// let date2 = new Date("2024-12-8");
+
+// let diffTime = Math.abs(date2.getTime() - date1.getTime());
+
+// let diffDays = Math.ceil(diffTime / (1000 * 60 * 60 * 24));
+
+// console.log(diffDays);
+
+
+// //Q-8 What is the difference between getUTCDate() and getDate()?
+// const date = new Date('2024-11-30T23:30:00Z');  
+
+// console.log(date.getUTCDate());  
+// console.log(date.getDate());     
+
+
+// //Q-9 How do you format a Date object into a string using toISOString()?
+// let formatedDate = new Date().toISOString();
+// console.log(formatedDate);
+
+
+// //Q-10 Write a code snippet to get the last day of the current month.
+
+// let lastDayOfMonth = new Date(date.getFullYear(), date.getMonth() , 0).getDate();
+// console.log(lastDayOfMonth);
+
+
+// //Q-11 How can you parse a date string (e.g., "2024-11-30") into a Date object?
+
+// let dateString = "2024-11-30";
+
+// let parsedDate = new Date(dateString);
+
+// console.log(parsedDate);
+
+// //Q-12 What is the result of Math.round(4.5)? How does it differ from Math.floor(4.5)?
+
+// console.log(Math.round(4.5)); 
+
+// console.log(Math.floor(4.5));
+
+// //Q-13 Write a code snippet to generate a random number between 1 and 10 using the Math object.
+// let randonNumber = Math.floor(Math.random() * 10 + 1);
+// console.log(randonNumber);
+
+
+// //Q-14 How can you find the largest number in an array using Math.max()?
+
+// let numbers = [1,3,24,36,45,12,99,1200,345]
+// let largestNumber = Math.max(...numbers)
+// console.log(largestNumber);
+
+
+// //Q-15 What is the purpose of the Math.pow() method? Write an example.
+
+// let numberpow = Math.pow(2,4)
+// console.log(numberpow);
+
+// //Q-16 What is the difference between Math.ceil() and Math.floor()?
+// let mathCill = Math.ceil(9.5);
+// let mathFloor = Math.floor(9.5);
+// console.log(mathCill , mathFloor);
+
+
+// //Q-17 How do you convert a string like "123.45" to a number in JavaScript?
+
+// let stringNumber = Number("123.45");
+// console.log(stringNumber);
+
+// //Q-18 What is Number.isNaN()? How is it different from the global isNaN() function?
+
+// console.log(Number.isNaN(NaN));
+
+// //Q-19 Write a code snippet to truncate a number to 2 decimal places.
+
+// let truncatedNumber = Math.round(123.456789 * 100) / 100;
+// console.log(truncatedNumber);
+
+// //Q-20 How can you check if a number is an integer using the Number class?
+
+// let numberInt = Number.isInteger(1);
+
+// console.log(numberInt);
+
+// //Q-21 Write a function to calculate the square root of a number using the Math object.
+
+// function squareRoot(number) {
+//   return Math.sqrt(number);
+// }
+
+// console.log(squareRoot(9));
+
+
+
+
+
+
+
+
+// Print the current date in YYYY-MM-DD format.
+
+
+let currentDate = new Date();
+
+let currentyear = currentDate.getFullYear();
+let currentMonth = currentDate.getMonth() + 1;
+let currentdaydate = currentDate.getDate();
+
+console.log(currentDate.toLocaleDateString())
+
+console.log(`${currentyear}-${currentMonth}-${currentdaydate}`);
+
+
+// Print the current date in DD/MM/YYYY format.
+
+console.log(`${currentdaydate}/${currentMonth}/${currentyear}`)
+
+// Get the current year and print it.
+console.log(currentyear);
+
+
+
+// Get the current month and print it as a string (e.g., "January", "February").
+
+let months = ["January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December"];
+console.log(months[currentMonth]);
+
+switch(currentMonth + 1){
+    case 1:
+    console.log("January");
+    break;
+    case 2:
+    console.log("February");
+    break;
+    case 3:
+    console.log("March");
+    break;
+    case 4:
+    console.log("April");
+    break;
+    case 5:
+    console.log("May");
+    break;
+    case 6:
+    console.log("June");
+    break;
+    case 7:
+    console.log("July");
+    break;
+    case 8:
+    console.log("August");
+    break;
+    case 9:
+    console.log("September");
+    break;
+    case 10:
+    console.log("October");
+    break;
+    case 11:
+    console.log("November");
+    break;
+    case 12:
+    console.log("December");
+    break;
+  }
+
+// Add 5 years to the current date and print the new date.
+
+let fiveYearsLater = new Date(currentDate.getFullYear() + 5, currentDate.getMonth(), currentDate.getDate());
+console.log(fiveYearsLater);
+
+// Find the difference between two dates and print the number of days between them.
+
+let date1 = new Date("2001-12-08");
+let date2 = new Date();
+
+let diffTime = date2.getTime() - date1.getTime();
+let diffDays = Math.ceil(diffTime / (1000 * 60 * 60 * 24));
+console.log(diffDays);
+
+
+// Calculate the age of a person based on their birthdate (input date) and print the age in years.
+let age = "12/08/2020"
+let birthDate = new Date(age);
+console.log(birthDate);
+let today = new Date();
+let ageDiffMs = today.getTime() - birthDate.getTime();
+let ageDate = Math.ceil(ageDiffMs / (1000 * 60 * 60 * 24 * 365));
+console.log(ageDate);
+
+
+
+
+
+// Get the day of the week for the current date (e.g., "Monday", "Tuesday").
+
+let dayofWeek = ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday","Sunday"]
+
+console.log(dayofWeek[currentDate.getDay() - 1]);
+
+
+switch(currentDate.getDay()){
+    case 1:
+    console.log("Monday");
+    break;
+    case 2:
+    console.log("Tuesday");
+    break;
+    case 3:
+    console.log("Wednesday");
+    break;
+    case 4:
+    console.log("Thursday");
+    break;
+    case 5:
+    console.log("Friday");
+    break;
+    case 6:
+    console.log("Saturday");
+    break;
+    case 7:
+    console.log("Sunday");
+    break;
+  }
+
+// Check if a given year is a leap year or not.
+
+
+// Print the time in HH:MM:SS format for the current time.
+
+
+
+let hours = currentDate.getHours();
+let minutes = currentDate.getMinutes();
+let seconds = currentDate.getSeconds();
+let hoursLocal = currentDate.toLocaleTimeString();
+
+
+console.log(`${hours}:${minutes}:${seconds}`);
+console.log(hoursLocal);

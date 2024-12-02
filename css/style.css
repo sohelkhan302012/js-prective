@@ -1,0 +1,45 @@
+.anousment-custom-main {
+  background-color: #000;
+  padding: 8px 0;
+  display: block;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  color: #fff;
+  font-size: 16px;
+  font-weight: 400;
+}
+.contact-menu {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+}
+.contact-menu a {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  color: #fff;
+  text-decoration: none;
+}
+.link-underline {
+  text-decoration: 1px solid underline #fff;
+  color: #fff;
+}
+.p-space-0{
+    margin: 0;
+}
+.social-icon{
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    height: 25px;
+}
+.social-icon a{
+    height: 25px;
+}
+
+
+
+
+
+
